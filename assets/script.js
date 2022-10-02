@@ -21,6 +21,24 @@ var saveEvent = function (time, event) {
 
 // dynamically display different colors based on current time
 /// define past, current, and future time. Past is grey, current is red, future is green
+var currentTime = moment().hour();
+
+$(".hourSlot").each(function () {
+    var slotTime = parseInt($(this).attr("id"));
+
+    if (slotTime < currentTime) {
+        $(this).addClass("past");
+    }
+    else if (slotTime === currentTime) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+    }
+    else {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+    };
+});
 
 
 // load previously saved events from local storage
