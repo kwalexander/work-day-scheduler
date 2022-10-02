@@ -24,3 +24,16 @@ var saveEvent = function (time, event) {
 
 
 // load previously saved events from local storage
+var loadEvents = function () {
+    $("#9 .eventName").val(localStorage.getItem("9"));
+    $("#10 .eventName").val(localStorage.getItem("10"));
+    $("#11 .eventName").val(localStorage.getItem("11"));
+    $("#12 .eventName").val(localStorage.getItem("12"));
+    $("#13 .eventName").val(localStorage.getItem("13"));
+    $("#14 .eventName").val(localStorage.getItem("14"));
+    $("#15 .eventName").val(localStorage.getItem("15"));
+    $("#16 .eventName").val(localStorage.getItem("16"));
+    $("#17 .eventName").val(localStorage.getItem("17"));
+}
+
+loadEvents();
