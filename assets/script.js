@@ -11,7 +11,13 @@ $(".saveBtn").click(function () {
     console.log(newTime);
     newEvent = $(this).siblings(".eventName").val();
     console.log(newEvent);
+
+    saveEvent(newTime, newEvent);
 })
+
+var saveEvent = function (time, event) {
+    localStorage.setItem(time, event);
+};
 
 // dynamically display different colors based on current time
 /// define past, current, and future time. Past is grey, current is red, future is green
