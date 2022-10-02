@@ -7,7 +7,7 @@ Key features of the application include:
 * conditional formatting based on the current hour of the day (past/present/future colors)
 
 # Screenshot
-Application screenshot ![here](/workday_screenshot.png?raw=true "here")
+Application screenshot ![here](assets/images/workday_screenshot.png?raw=true "here")
 
 
 # Links
